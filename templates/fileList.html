@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件树</title>
+</head>
+<body>
+<table border="2" cellpadding="10" cellspacing="10">
+    <tr>
+        <th>名称</th>
+        <th>类型</th>
+        <th>大小</th>
+        <th>创建时间</th>
+        <th>修改时间</th>
+        <th>访问时间</th>
+    </tr>
+    <tr>
+        <td><a href="{{ lastDir }}">上层目录</a></td>
+    </tr>
+    {{ trs| safe }}
+</table>
+</body>
+</html>
